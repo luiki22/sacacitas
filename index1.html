@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SACA TU CITA CON EXTRANJERÍA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>SACA TU CITA CON EXTRANJERÍA</h2>
+    <p>*Complete los siguientes campos.</p>
+    <form id="formulario">
+      <div class="form-group">
+        <label for="tipo">Tipo de trámite:</label>
+        <select id="tipo" name="tipo">
+          <option value="extranjeria">Extranjería</option>
+          <option value="registro_civil">Registro Civil</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="provincia">Provincia:</label>
+        <select id="provincia" name="provincia">
+          <option value="seleccionar">Seleccionar Provincia</option>
+          <!-- Aquí se generarán las opciones de las provincias -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="comisaria">Centro:</label>
+        <select id="comisaria" name="comisaria">
+          <option value="seleccionar">Seleccionar Comisaría</option>
+          <!-- Aquí se generarán las opciones de los centros -->
+        </select>
+      </div>
+      <div id="mensaje" class="mensaje"></div>
+      <div class="botones-container">
+        <button type="button" id="aceptar-btn">CONTINUAR</button>
+      </div>
+    </form>
+  </div>
+  <div id="mensajeEnv" class="mensajeEnv"></div>
+  <script src="script1.js"></script>
+</body>
+</html>
